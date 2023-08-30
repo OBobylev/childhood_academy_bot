@@ -1,11 +1,12 @@
 import telebot as tl
+import os
 from telebot import types
 import gspread
 
-bot_token = '6565540010:AAEMbeWfChGJepwWvAFw4TXwElHzPK1GV4Y'
-googlesheet_id = '18XFw-zO_KVzgzV67KcQ9bEFeguHUOgHWOMMMMgWOdAo'
+bot_token = os.getenv('TELEGRAM_BOT_TOKEN', '')
+googlesheet_id = os.getenv('GOOGLE_SHEET_ID', '')
 bot = tl.TeleBot(bot_token)
-gc = gspread.service_account(filename='childhood_academy_bot/main_page/botnumbersca-64b03e03eedd.json')
+gc = gspread.service_account(filename='main_page/botnumbersca-64b03e03eedd.json')
 sh = gc.open('CA_numbers_bot')
 wks = sh.sheet1
 
