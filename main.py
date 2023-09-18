@@ -402,7 +402,7 @@ def callback(call):
                        reply_markup=resp_mrk)
     if call.data == "cr4":
         bot.send_photo(call.message.chat.id,
-                       photo=open("main_page/Creativity/cr4_photo.JPG", 'rb'),
+                       photo=open("main_page/Creativity/cr4_photo.jpg", 'rb'),
                        caption=open("main_page/Creativity/lepka.txt",
                                     mode='r',
                                     encoding='utf-8').read(),
