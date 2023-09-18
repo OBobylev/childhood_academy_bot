@@ -97,7 +97,7 @@ def callback(call):
                        reply_markup=resp_mrk)
     if call.data == 'kid4':
         bot.send_photo(call.message.chat.id,
-                       photo=open("main_page/kids1-3/kid4_photo.jpg", 'rb'),
+                       photo=open("main_page/kids1-3/kid4_photo.JPG", 'rb'),
                        caption=open("main_page/kids1-3/karandashi_2.txt",
                                     mode='r',
                                     encoding='utf-8').read(),
@@ -381,14 +381,14 @@ def callback(call):
                        reply_markup=mrk)
     if call.data == "cr1":
         bot.send_photo(call.message.chat.id,
-                       photo=open("main_page/Creativity/cr1_photo.JPG", 'rb'),
+                       photo=open("main_page/Creativity/cr1_photo.jpg", 'rb'),
                        caption=open("main_page/Creativity/karandashi.txt",
                                     mode='r',
                                     encoding='utf-8').read(),
                        reply_markup=resp_mrk)
     if call.data == "cr2":
         bot.send_photo(call.message.chat.id,
-                       photo=open("main_page/Creativity/cr2_photo.JPG", 'rb'),
+                       photo=open("main_page/Creativity/cr2_photo.jpg", 'rb'),
                        caption=open("main_page/Creativity/izo_studio.txt",
                                     mode='r',
                                     encoding='utf-8').read(),
